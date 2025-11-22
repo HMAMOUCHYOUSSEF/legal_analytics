@@ -1,0 +1,47 @@
+/data
+
+# =============================================
+# DATA - Ignore all data files
+# =============================================
+data/raw/
+data/processed/
+*.csv
+*.json
+*.xml
+*.db
+*.sqlite
+*.pkl
+*.pickle
+
+# =============================================
+# ENVIRONMENT - Sensitive/local config
+# =============================================
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment variables (never commit secrets!)
+.env
+.env.*
+!.env.example
+
+# Setup scripts (if they contain secrets)
+setup.env.sh
+
+# =============================================
+# PYTHON - Development artifacts
+# =============================================
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =============================================
+# SYSTEM - OS and IDE files
+# =============================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
